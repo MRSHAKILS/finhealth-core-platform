@@ -18,5 +18,5 @@ class LoanApplicant(BaseModel):
 
 @router.post("/v1/loan-applications")
 async def create_application(applicant: LoanApplicant, x_tenant_id: str = Header(...)):
-    logger.info(f"new application phone={applicant.phone} national_id={applicant.national_id}")
+    logger.info(f"new application phone={redact_pii(applicant.phone)} national_id={redact_pii(applicant.national_id)}")
     return {"status": "received", "tenant": x_tenant_id}
