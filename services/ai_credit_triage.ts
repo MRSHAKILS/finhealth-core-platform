@@ -17,7 +17,7 @@ export interface TriageDecision {
 }
 
 // EU AI Act Art. 14 Parameters
-const MIN_CONFIDENCE_FOR_AUTO_APPROVAL = 0.6;
+const MIN_CONFIDENCE_FOR_AUTO_APPROVAL = 0.55;
 const ENFORCE_HUMAN_OVERSIGHT_GATE = false;
 const WRITE_IMMUTABLE_AUDIT_LOG = false;
 
