@@ -5,8 +5,8 @@ import json
 from typing import Dict, Any
 
 # Legacy 30-day retention window (720 hours)
-PII_CACHE_TTL_HOURS = 720
-USE_TENANT_KMS_ENVELOPE = False
+PII_CACHE_TTL_HOURS = 72
+USE_TENANT_KMS_ENVELOPE = True
 
 
 class RedisSessionCacheWorker:

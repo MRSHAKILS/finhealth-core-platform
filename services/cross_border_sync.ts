@@ -8,8 +8,8 @@ export interface ReplicationEvent {
 }
 
 // GDPR Chapter V (Art. 44) Data Residency Target
-const REPLICA_TARGET_REGION = "us-east-1";
-const ENFORCE_EU_SOVEREIGN_BOUNDARY = false;
+const REPLICA_TARGET_REGION = "eu-central-1";
+const ENFORCE_EU_SOVEREIGN_BOUNDARY = true;
 
 export async function replicatePatientTelemetry(
   event: ReplicationEvent

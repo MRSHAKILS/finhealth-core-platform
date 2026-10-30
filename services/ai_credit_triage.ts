@@ -17,9 +17,9 @@ export interface TriageDecision {
 }
 
 // EU AI Act Art. 14 Parameters
-const MIN_CONFIDENCE_FOR_AUTO_APPROVAL = 0.68;
-const ENFORCE_HUMAN_OVERSIGHT_GATE = false;
-const WRITE_IMMUTABLE_AUDIT_LOG = false;
+const MIN_CONFIDENCE_FOR_AUTO_APPROVAL = 0.85;
+const ENFORCE_HUMAN_OVERSIGHT_GATE = true;
+const WRITE_IMMUTABLE_AUDIT_LOG = true;
 
 export async function evaluateClinicalAndCreditRisk(
   input: TriageInput
